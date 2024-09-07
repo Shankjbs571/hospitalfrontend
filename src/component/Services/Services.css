@@ -1,0 +1,72 @@
+/* Container for all services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual service card styling */
+  .service {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  
+  /* Image styling within service card */
+  .service img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Description styling */
+  .service p {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Hover effect for service card */
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .services-container {
+      padding: 10px;
+    }
+  
+    .service {
+      min-width: 200px;
+    }
+  
+    .service p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service {
+      min-width: 150px;
+    }
+  
+    .service p {
+      font-size: 12px;
+    }
+  }
+.main-content {
+    padding-top: 120px; /* Adjust this value based on the height of your Navbar */
+  }
+  

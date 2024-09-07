@@ -1,0 +1,69 @@
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Optional: Add a blur effect to the background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the navbar stays on top */
+  padding: 1rem 0; /* Add padding to the navbar */
+  height: 6rem; /* Adjust the height according to the logo size */
+}
+
+/* Content below the navbar */
+.main-content {
+  margin-top: 6rem; /* Adjust margin to match the height of the navbar */
+  padding-top: 1rem; /* Additional padding if needed */
+}
+
+/* Navigation links */
+.nav-link {
+  color: #4a4a4a; /* Dark gray color for links */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+  color: #1a202c; /* Darker gray color on hover */
+}
+
+/* Logo in the navbar */
+.navbar img {
+  max-height: 4rem; /* Adjust the height as needed */
+}
+
+/* Responsive container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mobile navigation link block */
+.md\:hidden .nav-link.block {
+  padding: 10px 20px;
+  background-color: #f7fafc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Hover effect for mobile navigation links */
+.md\:hidden .nav-link.block:hover {
+  background-color: #e2e8f0;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    margin-right: 20px;
+  }
+
+  .nav-link:last-child {
+    margin-right: 0;
+  }
+}
